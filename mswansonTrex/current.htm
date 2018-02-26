@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Mark Swanson" />
+    <meta name="description" content="A site for adventure trekkers" />
+    <meta name="keywords" content="adventure, travel, trek, hike, kayak, bike, climb" />
+    <title>Trex Adventures</title>
+    
+    <!--
+      Trex Adventures Home Page
+      Author: Mark Swanson
+      Date:   9/23/2014
+
+      Filename:         home.htm
+    -->
+      <script src="modernizr-1.5.js"></script>
+      <link rel="stylesheet" type="text/css" href="trexreset.css">
+      <link rel="stylesheet" type="text/css" href="trexstyles.css">
+      <link rel="stylesheet" type="text/css" href="trexlayout.css">
+</head>
+
+<body>
+	<header>
+  <!--  	<img src="trex_header.jpg" width="900" height="214" alt="Trex site header"/>-->
+        <p>Trex &#8250;&#8250;&#8250; Stories, news, and resources for treks worldwide</p>
+	</header>
+    
+    <nav>
+    	<ul>
+            <li><a href="home.htm">Home</a></li>
+            <li><a href="current.htm">Current Trex</a></li>
+            <li><a href="page1.htm">Kayaking</a></li>
+            <li><a href="page2.htm">Hiking</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+        
+	<section class="full">
+    	<h2>Current Trex</h2>
+        <figure>
+            <img src="world_map.jpg" alt="World map" 
+                width="900" height="552" usemap="#worldmap"/>
+            <figcaption style="font-style: italic; text-align: center;">
+            Click a region to see current trex</figcaption>
+  		</figure>
+    	<map name="worldmap">
+          <area shape="poly" coords="164,83,187,79,194,90,193,111,181,133,177,161,182,198,209,225,241,251,257,254,261,241,280,227,288,214,269,182,288,166,317,149,346,116,341,87,343,54,286,35,248,37,204,40,170,55,155,67" href="region.htm" alt="North America">
+          <area shape="poly" coords="258,262,247,284,261,322,280,344,283,390,292,425,305,449,332,446,313,410,326,395,342,362,363,328,366,300,341,272,317,250,286,234,260,248" href="region.htm" alt="South America">
+          <area shape="poly" coords="431,173,411,199,400,229,414,266,450,268,466,266,475,297,474,322,482,357,487,381,509,382,533,363,549,357,573,349,580,324,573,300,572,269,582,243,555,234,538,199,526,182,497,171,459,159" href="region.htm" alt="Africa">
+    	</map>
+  </section>
+    
+    <footer>
+         <address>
+            Trex &#8250;&#8250;&#8250; Stories, news, and resources for treks worldwide
+         </address>     
+    </footer>
+
+</body>
+</html>
