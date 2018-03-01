@@ -1,0 +1,53 @@
+﻿/* general styles */
+* {
+    margin: auto;
+    padding: 0px;
+}
+body {
+    max-width: 3000px;
+    margin: auto;
+}
+
+/* navigation styles */
+nav {
+    display: block;
+}
+
+    nav > ul > li {
+        float: left;
+    }
+
+    nav > ul ul {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    nav ul li:hover > ul {
+        visibility: visible;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        padding: 15px 15px;
+    }
+
+/* heading styles */
+header {
+    padding: 90px 150px 90px;
+    clear: both;
+}
+
+/* content styles */
+    section article p {
+        padding: 5px 10px 5px;
+    }
+
+.floatLeft {
+    float: left;
+    margin: 5px;
+}
+
+.threeCol {
+    width: 32%;
+    overflow-x: hidden;
+}
