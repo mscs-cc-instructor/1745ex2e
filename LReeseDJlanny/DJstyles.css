@@ -66,10 +66,12 @@ color:rgb(255,0,0);
 }
 
 nav > ul ul {
-    position: absolute;
     visibility: hidden;
 }
 
+nav ul li:hover > ul {
+    visibility: visible;
+}
 section.full {
 width: 100%;
 }
