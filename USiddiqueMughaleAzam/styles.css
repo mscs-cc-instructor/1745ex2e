@@ -1,0 +1,372 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: Champagne;
+    src: url(fonts/1942.woff) format('woff'), url(fonts/1942.ttf) format('ttf');
+}
+
+/*
+Mughal-e-Azam Style Sheet
+   Author: Ummer Siddique
+   Date:   12/15/2017
+   
+   Filename: styles.css
+
+*/
+
+
+
+/* HTML and Body styles */
+
+html {
+    background-color: Lavender;
+    font-family: Verdana, Geneva, sans-serif;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    box-shadow: rgb(51, 51, 51) 20px 0px 40px, rgb(51, 51, 51) -20px 0px 40px, inset rgb(51, 21, 21) 0px 0px 40px;
+    border-left: 3px solid rgb(51, 51, 51);
+    border-right: 3px solid rgb(51, 51, 51);
+    min-height: 100%;
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 1020px;
+    width: 100%;
+}
+
+
+/* Header styles */
+
+header img#logoimg {
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(to bottom, black 70%, rgb(106, 90, 205));
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: white;
+}
+
+
+
+    /* Navigation list styles */
+
+    header nav ul li {
+        font-size: 1.2em;
+        line-height: 2.3em;
+        height: 2.3em;
+        padding: 0px 10px;
+    }
+
+        header nav ul li a {
+            color: white;
+            display: block;
+            width: 100%;
+        }
+
+            header nav ul li a:hover {
+                color: rgb(249, 209, 17);
+            }
+
+a#navicon {
+    display: none;
+}
+
+/* Section styles */
+
+section {
+    margin: 30px 3%;
+}
+
+    section h1 {
+        font-size: 2.4em;
+        line-height: 2.4em;
+        font-family: Champagne, cursive;
+        letter-spacing: 0.3em;
+        text-align: left;
+        font-weight: normal;
+        color: black;
+    }
+
+    /* Section Paragraph styles */
+
+    section p {
+        line-height: 1.4em;
+        margin: 15px 0px;
+    }
+
+p#first:first-of-type::first-letter {
+    font-size: 4em;
+    float: left;
+    line-height: 0.8;
+}
+
+
+/* Footer styles */
+
+footer {
+    color: white;
+    background: linear-gradient(to bottom, SlateBlue, black);
+    font-size: 0.9em;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Form Layout Styles */
+div.formRow {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+    div.formRow > * {
+        -webkit-flex: 1 1 150px;
+        flex: 1 1 150px;
+    }
+
+
+
+/* Legend Styles */
+
+legend {
+    background-color: SlateBlue;
+    color: white;
+    padding: 5px;
+}
+
+/* Spinner Styles */
+div.formRow > input#entertainSpin {
+    -webkit-flex: 0 0 50px;
+    flex: 0 0 50px;
+}
+
+/* Form Button Styles */
+
+div#buttons {
+    text-align: center;
+    width: 100%
+}
+
+input[type='submit'], input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+    background: rgb(220,255,220) url(images/rb_valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+    background: rgb(255,232,233) url(images/rb_invalid.png) bottom right/contain no-repeat;
+}
+
+/* Table styles */
+
+table {
+    background: white;
+    border-collapse: collapse;
+    font-size: 0.75em;
+    width: 100%;
+}
+
+
+th, td {
+    border: 1px solid black;
+}
+
+
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Table Row styles */
+
+thead th {
+    background: Indigo;
+    color: white;
+}
+
+tfoot td {
+    background: Navy;
+    color: white;
+}
+
+tr:nth-of-type(even) {
+    background: Thistle;
+}
+
+
+
+/* ================
+   Base Flex Styles
+   ================
+*/
+
+
+section.topics {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+    section.topics article {
+        -webkit-flex: 1 1 200px;
+        flex: 1 1 200px;
+        color: white;
+    }
+
+
+
+    /* Article Styles */
+
+    section.topics article {
+        border: 1px solid rgb(31, 73, 135);
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+        section.topics article:nth-of-type(3n+1) {
+            background-color: Olive;
+        }
+
+        section.topics article:nth-of-type(3n+2) {
+            background-color: DarkOrchid;
+        }
+
+        section.topics article:nth-of-type(3n+3) {
+            background-color: Teal;
+        }
+
+        section.topics article:nth-of-type(3n+4) {
+            background-color: Crimson;
+        }
+
+        section.topics article h2 {
+            font-size: 1.2em;
+            margin: 5px;
+            text-align: center;
+            color: White;
+        }
+
+        section.topics article p {
+            margin: 8px;
+        }
+
+/* Photo Styles*/
+
+#Photo {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2px;
+    border: 2px solid cornsilk;
+}
+
+.Photoright {
+    width: 30%;
+    padding: 10px;
+    float: right;
+    border: 2px solid Grey;
+    margin: 10px 10px 10px 10px;
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+
+
+    a#navicon {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+        header nav ul li {
+            font-size: 1em;
+            line-height: 1.3em;
+            height: 1.3em;
+        }
+
+        a#navicon:hover + ul, header nav ul:hover {
+            display: block;
+        }
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 0.9em;
+    }
+
+    /* Table styles */
+    table, tbody, tr, td, th {
+        display: block;
+    }
+
+
+    thead, tfoot {
+        display: none;
+    }
+
+    tbody td {
+        position: relative;
+        padding-left: 40%;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 5px;
+        width: 40%;
+        font-weight: bold;
+    }
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+    body header nav ul {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+        body header nav ul li {
+            -webkit-flex: 0 1 auto;
+            flex: 0 1 auto;
+        }
+}
