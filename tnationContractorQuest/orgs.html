@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="modernizr-1.5.js"></script>
+    <link href="test.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="header">
+    <div>  
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="loginbutton">Login</button>
+
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+        
+                <button type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+            </form>
+        </div>
+    </div>
+  <h1>Contractor Quest</h1>
+  <p>Find or list a contract today!</p>
+</div>
+
+<div class="topnav">
+    <div class="dropdown">
+    <button onclick="window.location.href='account.html'" class="dropbtn">Account</button>
+    <div class="dropdown-content">
+        <a href="#">Payments</a>
+    </div>
+    </div> 
+    <div class="dropdown">
+    <button onclick="window.location.href='contracthome.html'" class="dropbtn">Contracts</button>
+    <div class="dropdown-content">
+        <a href="#">Accepted Contracts</a>
+        <a href="#">Your Listed Contracts</a>
+    </div>
+    </div> 
+    <div class="dropdown">
+    <button onclick="window.location.href='people.html'" class="dropbtn">People</button>
+    <div class="dropdown-content">
+        <a href="#">Friends</a>
+        <a href="#">Staff</a>
+    </div>
+    </div> 
+    <div class="dropdown">
+    <button onclick="window.location.href='orgs.html'" class="dropbtn">Organizations</button>
+    <div class="dropdown-content">
+        <a href="#">MN State College Southeast</a>
+    </div>
+    </div> 
+    <div class="dropdown">
+    <button onclick="window.location.href='helpcenter.html'" class="dropbtn">Help Center</button>
+    <div class="dropdown-content">
+        <a href="#">Frequent Questions</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms Of Service</a>
+    </div>
+    </div> 
+    <form action="/action_page.php">
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2 class="categories">Directory</h2>
+        <ul class="list">
+            <li>MN State College Southeast</li>
+            <li>Hogwarts School Of Magic</li>
+            <li>The Lawn Pruners</li>
+            <li>Nail Tappers</li>
+            <li>Dog Walkers United</li>
+        </ul>
+  </div>
+  
+  <div class="column middle">
+    <h2 class="orgs">Organizations</h2>
+    <p><b style="font-size: 2em;">Browse Organization</b></p>
+    <p><b>MN State College Southeast</b> <br>About us: We will expand your mind. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nibh tellus. Pellentesque tincidunt dapibus odio, ac sollicitudin leo auctor sed. Vivamus eu urna id turpis tempor posuere et ut augue. </p>
+    <p><b>Hogwarts School Of Magic</b> <br>About us: We make pigs fly. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nibh tellus. Pellentesque tincidunt dapibus odio, ac sollicitudin leo auctor sed. Vivamus eu urna id turpis tempor posuere et ut augue. </p>
+    <p><b>The Lawn Pruners</b> <br>About us: Fastest lawn cutters in the world. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nibh tellus. Pellentesque tincidunt dapibus odio, ac sollicitudin leo auctor sed. Vivamus eu urna id turpis tempor posuere et ut augue. </p>
+    <p><b>Nail Tappers</b> <br>About us: Will hit anything with a hammer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nibh tellus. Pellentesque tincidunt dapibus odio, ac sollicitudin leo auctor sed. Vivamus eu urna id turpis tempor posuere et ut augue. </p>
+    <p><b>Dog Walkers United</b> <br>About us: Walk bears also. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nibh tellus. Pellentesque tincidunt dapibus odio, ac sollicitudin leo auctor sed. Vivamus eu urna id turpis tempor posuere et ut augue. </p>
+    </div>
+  
+  <div class="column side">
+      <img src="searching.jpg" style="width:100%;height:120px;"/>
+    <h2 class="searchingh2">Enter a keyword or location</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+</div>
+  
+</body>
+</html>
