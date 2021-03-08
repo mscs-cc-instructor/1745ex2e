@@ -1,0 +1,70 @@
+﻿header {
+    background-color: red;
+    font-style: italic;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ol {
+    list-style-type: circle;
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.pagelinks {
+    font-size: 20px;
+}
+
+[class*='col-'] {
+    float:left;
+}
+
+.col-1-3 {
+    float:left;
+    width: 33.33%;
+}
+
+.col3head {
+    font-size: 25px;
+}
+
+.col2head {
+    font-size: 20px;
+}
+
+.col1head {
+    font-size: 20px;
+}
