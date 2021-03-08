@@ -1,0 +1,227 @@
+﻿header {
+    background-color: black;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1150px;
+    min-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    color: mediumblue;
+}
+
+nav > ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+    nav > ul > li {
+        list-style: none;
+        text-align: center;
+        flex: 1 0 auto;
+    }
+
+        nav > ul > li:hover {
+            color: white;
+            background-color: blue;
+        }
+
+div.row {
+    clear: both;
+}
+
+    div.row::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+div.col-2-3 {
+    width: 100%;
+    float: left;
+    background: radial-gradient(azure, lightblue, blue);
+    color: black;
+}
+
+div[class^="col-"] {
+    float: left;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+div.row1 {
+    color: red;
+    font-size: 20px;
+    height: 50px;
+    text-shadow: 1px 2px 2px aliceblue;
+    color: #FFF0F5;
+    box-shadow: 0px 0px 55px white;
+    color: #FFFFF0;
+}
+
+div.row2 {
+    color: white;
+}
+
+footer {
+    height: 150px;
+}
+
+.minisoap {
+    opacity: 0.5;
+    transform-origin: left;
+    transform: perspective(250px) rotateY(45deg);
+}
+
+.soapa {
+    -webkit-filter: sepia(0.2);
+    filter: sepia(0.2);
+    float: left;
+}
+
+.soapb {
+    -webkit-filter: saturate(8.0);
+    filter: saturate(8.0);
+    float: left;
+}
+
+.soapc {
+    -webkit-filter: grayscale(4);
+    filter: grayscale(4);
+    float: left;
+}
+
+div.title4 {
+    color: white;
+    float: right;
+}
+
+div.title1 {
+    vertical-align: bottom;
+    transform-origin: bottom;
+    color: black;
+    float: right;
+}
+
+div.row3 {    
+    background-image: url('Images/handmade-soap.jpg');
+    height: 250px;
+    background: linear-gradient(to right, rgba(255,255,255,0) 20%, rgba(255,255,255,1)), url('Images/handmade-soap.jpg');
+    background-position: center;
+}
+
+h2 {
+    color: deeppink;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 400px;
+}
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+fieldset {
+    border: deeppink 5px solid;
+    border-radius: 15px;
+    flex: 1 1 150px;
+}
+
+legend {
+    border: pink 3px solid;
+    border-radius: 15px;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label {
+    text-align: right;
+    padding: 0px 20px 0px 0px;
+}
+
+div.formRow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+#forms {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+div.formRow > * {
+    flex: 1 1 150px;
+}
+
+input, select, textarea {
+    border: darkmagenta 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px 5px 5px;
+    padding: 5px 10px 5px 5px;
+}
+
+    input:focus {
+        background-color: lightgreen;
+    }
+
+        input:focus:invalid {
+            background-color: red;
+        }
+
+div.optGroup {
+    border: darkmagenta 2px solid;
+    border-radius: 15px;
+    padding: 5px 10px 5px 5px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+table {
+    border: thin solid white;
+}
+
+td {
+    border: white thin solid;
+}
+
+input:required, textarea:required {
+    background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+}
+/*Media query for phones*/
+@media only screen and (max-width: 480px) {
+    nav > ul {
+        flex-flow: row wrap;
+    }
+
+        nav > ul > li {
+            text-align: left;
+            flex: 1 0 300px;
+        }
+}
