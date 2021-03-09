@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Watch Live</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row0">
+        <div class="container verticalCenter">
+            <a href="../html/index.html">
+                <img src="./resources/nl_logo.png" />
+            </a>
+            <div class="row0-text">
+                <h1>WATCH LIVE</h1>
+                <p>NORTHERNLION</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row1 linear-gradient">
+        <div class="nav linear-gradient">
+            <a href="./home.html"><span class="h5">HOME</span></a>
+            <a href="./watchLive.html"><span class="h5">WATCH LIVE</span></a>
+            <a href="./store.html"><span class="h5">STORE</span></a>
+            <a href="./recentVids.html"><span class="h5">RECENT VIDEOS</span></a>
+            <a href="./account.html"><span class="h5">ACCOUNT</span></a>
+        </div>
+    </div>
+
+    <div class="row2">
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-embed" class="video-container"></div>
+
+        <!-- Load the Twitch embed script -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+        <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+                width: 854,
+                height: 480,
+                channel: "monstercat",
+                // only needed if your site is also embedded on embed.example.com and othersite.example.com
+                parent: ["embed.example.com", "othersite.example.com"]
+            });
+        </script>
+    </div>
+
+    </div>
+
+    <div class="row3">
+        <div class="row3-1">
+            <p><span class="h5">Contact</span></p>
+            <p><span class="h5">Support Me</span></p>
+            <p><span class="h5">General</span></p>
+        </div>
+
+        <div class="row3-2">
+            <div class="row3-col">
+                <ul>
+                    <li>Work Email</li>
+                    <li>Personal Email</li>
+                    <li>PO Box</li>
+                </ul>
+            </div>
+            <div class="row3-col">
+                <ul>
+                    <li>Patreon</li>
+                    <li>PayPal</li>
+                </ul>
+            </div>
+            <div class="row3-col">
+                <ul>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row3-3">
+            <p class="small">&copy;2020 Malachi Nelson</p>
+        </div>
+    </div>
+</body>
+</html>

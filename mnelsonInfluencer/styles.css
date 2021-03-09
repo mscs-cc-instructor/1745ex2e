@@ -1,0 +1,477 @@
+﻿@font-face {
+    font-family: Roboto;
+    src: url(./resources/fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    font-weight: bold;
+    src: url(./resources/fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    font-style: italic;
+    src: url(./resources/fonts/Roboto/Roboto-Italic.ttf)
+}
+@font-face {
+    font-family: RobotoSlab;
+    src: url(./resources/fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf);
+}
+:root {
+    --crimson-01: #fc355c;
+    --crimson-02: #f41d48;
+    --crimson-03: #dc143c;
+    --mediumTurquoise: #07e9ed;
+    --mediumTurquoise: #75edef;
+}
+/* reset styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Roboto;
+    list-style: none;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+}
+
+/* general stuff */
+h1, .h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+}
+h2, .h2 {
+    font-size: 2.5rem;
+}
+h3, .h3 {
+    font-size: 2rem;
+}
+h4, .h4 {
+    font-size: 1.5rem;
+}
+h5, .h5 {
+    font-size: 1.25rem;
+}
+.small {
+    font-size: 0.8rem;
+}
+.medium {
+    font-size: 1.5rem;
+}
+em {
+    font-weight: bold;
+}
+.fontColor {
+    color: var(--crimson-01);
+}
+.box-shadow {
+    box-shadow: 3px 3px 4px #6a6a6e;
+}
+.linear-gradient {
+    background: linear-gradient(#1a1a1e, #3a3a3e);
+}
+table li::before {
+    content:'';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #515159;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* all */
+html, body {
+    width: 100%;
+    min-width: 364px;
+    height: auto;
+    background: #fafafe;
+}
+body {
+    display: flex;
+    flex-flow: column;
+}
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.verticalCenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.horizCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* row0 */
+.row0 {
+    flex: 0 0 75px;
+    background: var(--crimson-03);
+    z-index: 4;
+    padding: 16px 0 16px 0;
+    min-height: 107px;
+}
+.row0 img {
+    width: 100px;
+    float: left;
+}
+.row0-text {
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.row0 h1 {
+    color: #f2f2f7;
+    font-size: 4rem;
+}
+.row0 p {
+    font-family: RobotoSlab;
+    color: #f2f2f7;
+    letter-spacing: 2px;
+}
+.row0 p, .row0 a {
+}
+.row0-col1 {
+    flex: 1 1 auto;
+}
+.row0-col2 {
+    flex: 1 1 auto;
+}
+
+/* row1 */
+.row1 {
+    flex: 0 0 50px;
+    position: sticky;
+    top: -1px;
+    width: 100%;
+    z-index: 4;
+    height: 50px;
+}
+.nav {
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+.nav a {
+    flex: 1 1 auto;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.nav a:hover {
+    background: linear-gradient(#2a2a2e, #4a4a4e);
+}
+.nav span {
+    color: #eee;
+    position: relative;
+}
+.nav a:hover span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #eaeaee;
+    animation-name: underline;
+    animation-duration: 100ms;
+}
+@keyframes underline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* row2 */
+.row2 {
+    flex: 1 0 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* home */
+.videos {
+    margin-top: 64px;
+    display: flex;
+}
+.socials {
+    margin-bottom: 64px;
+}
+.socials a {
+    display: flex;
+    align-items: center;
+    padding: 0.3em 0 0.3em 0;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 64px;
+    transition: 100ms background;
+    text-align: right;
+}
+.logo-container {
+    flex: 1 1 50%;
+}
+.socials img {
+    width: 2.5em;
+}
+.text-container {
+    flex: 1 1 50%;
+    text-align: left;
+    margin-left: 16px;
+}
+.socials span {
+    color: #dadade;
+    font-size: 1.2rem;
+    position: relative;
+}
+.socials a:hover {
+    background: linear-gradient(#2a2a2e, #4a4a4e);
+}
+.socials a:hover span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #eaeaee;
+    animation-name: underline;
+    animation-duration: 100ms;
+}
+/* video */
+.videos h1 {
+    color: #eaeaee;
+    color: var(--crimson-03);
+    margin-bottom: 8px;
+    position: relative;
+    text-align: right;
+    font-style: italic;
+}
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.video-container::after {
+    display: block;
+    content:"";
+    padding-top:56.25%;
+}
+iframe, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* (form)account */
+.account div {
+    width: 100%;
+    margin: 0.5rem 0 0.5rem 0;
+    position: relative;
+}
+.account input {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.input {
+    border: 1px solid #8a8a8e;
+    background: #fafafe;
+}
+.input:valid + .isValid::after{
+    content: "✓";
+    display: block;
+    position: absolute;
+    color: #5a5a5e;
+    right: 0;
+    top: 0;
+}
+.isValid{
+    display: inline;
+    right: 16px;
+    position: relative;
+}
+input.form-button {
+    width: 100%;
+    color: #eaeaee;
+}
+.form-button:hover {
+    background: #3a3a3e;
+}
+.account p {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+/* store */
+.boxes {
+    margin: 48px 0 48px 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+.img {
+    transition: 200ms all;
+    position: relative;
+    overflow: hidden;
+}
+.black-overlay {
+    background: #3a3a3e;
+    position: absolute;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    transition: 200ms all;
+    z-index: 2;
+}
+.img img {
+    background: #3a3a3e;
+    width: 100%;
+    height: 100%;
+    transition: 200ms all;
+}
+.img:hover .black-overlay {
+    opacity: 0;
+}
+.img:hover img {
+    transform: scale(1.1);
+}
+.box p {
+    background: #2a2a2e;
+    color: #dadade;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 4px 12px 4px 12px;
+}
+
+/* row3 */
+.row3 li, .row3 .h5, .row3 p {
+    /* footer colors */
+    color: #ccc;
+}
+.row3 {
+    flex: 0 0 auto;
+    background: #222;
+    background: linear-gradient(#2a2a2e, #3a3a3e);
+}
+.row3-1 {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+.row3-1 p {
+    flex: 1 1 33.33%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.row3-2 {
+    display: flex;
+    flex-flow: row;
+}
+.row3-col {
+    flex: 1 1 33.33%;
+}
+.row3 ul, .row3 .h5 {
+    padding-left: 20px;
+}
+.row3 li {
+    padding-bottom: 5px;
+    text-align: left;
+}
+.row3 li:last-child {
+    padding-bottom: 0;
+}
+.row3-3 p {
+    padding: 10px;
+}
+.row3-3 p {
+    text-align: right;
+}
+
+/* media queries */
+@media only screen and (min-width: 0) {
+    .row2 {
+        width: calc(90% + 32px);
+    }
+    .row2a h1 {
+        font-size: 2.5rem;
+        margin-right: 16px;
+    }
+    .videos {
+        flex-flow: column;
+    }
+    .videos h1 {
+        font-size: 2.5rem;
+        margin-right: 16px;
+    }
+    .iframe-container {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .socials {
+        flex: 1 1 auto;
+    }
+    .box {
+        width: 100%;
+        padding: 0 16px 16px 16px;
+        box-sizing: border-box;
+    }
+    .account {
+        width: 90%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}
+@media only screen and (min-width: 481px) {
+    .box {
+        width: 50%;
+        padding: 0 16px 16px 16px;
+        box-sizing: border-box;
+    }
+    .row2a h1 {
+        font-size: 3rem;
+        margin-right: 0;
+    }
+    .account {
+        width: 410px;
+    }
+    .socials {
+        flex: 1 1 auto;
+        margin-left: 0;
+    }
+    .videos h1 {
+        font-size: 3rem;
+        margin-right: 0;
+    }
+}
+@media only screen and (min-width: 796px) {
+    .row2a {
+        width: 95%;
+    }
+    .videos {
+        flex-flow: row nowrap;
+    }
+    .iframe-container {
+        width: 66%;
+        margin-bottom: 64px;
+    }
+    .socials {
+        margin-left: 64px;
+    }
+    .box {
+        width: 33.33%;
+        padding: 0 16px 16px 16px;
+        box-sizing: border-box;
+    }
+}
