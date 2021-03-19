@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="tablelayout.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav">
+            <a href="home.html">Home</a>
+            <a href="newplayers.html">New Players</a>
+            <a href="experiencedplayers.html">Experienced Players</a>
+            <a class="current" href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+        <header>
+            <h1>Contact Us:</h1>
+        </header>
+        <div id="form">
+            <form method="post">
+                <div id="fieldsets">
+                    <fieldset>
+                        <legend id="legend1">
+                            Contact Info
+                        </legend>
+                            <div class="formRow">
+                                <label for="firstname">First Name*:</label>
+                                <input type="text" placeholder="First Name" name="firstname" id="firstname" required/>
+                            </div>
+                            <div class="formRow">
+                                <label for="lastname">Last Name*:</label>
+                                <input type="text" placeholder="Last Name" name="lastname" id="lastname" required/>
+                            </div>
+                            <div class="formRow">
+                                <label for="email">E-mail*:</label>
+                                <input type="email" placeholder="yourname@email.com" name="email" id="email" required/>
+                            </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="legend2">
+                            Your Message
+                        </legend>
+                        <div class="formRow">
+                            <label for="message">What do you want to tell us?*</label>
+                            <textarea name="message" id="message" placeholder="Your message goes here..." required></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <div id="submit" class="button">
+                        <input type="submit" value="Submit"/>
+                    </div>
+                    <div id="reset" class="button">
+                        <input type="reset" value="Reset Form"/>
+                    </div>    
+                </div>             
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,2 +1,265 @@
-﻿body {
+﻿/* Styling that applies to all pages */
+
+html {
+    height: 100%;
+    font-family: "Arial";
+    background: url(images/backgroundimage.jpg) center center / cover no-repeat fixed content-box content-box;
+}
+
+header {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Styling for the navigation bar */
+
+div.nav {
+    background-color: darkslategray;
+    border: solid black 2px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+div.nav a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+div.nav a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+div.nav a.current {
+    background-color: black;
+    color: white;
+}
+
+/* Styling for homepage.html */
+
+#homepage {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div.homelinks {
+    border: solid black 2px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 300px;
+    background-color: whitesmoke;
+}
+
+img.homethumbnails {
+    border: 1px solid black;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* Styling for newplayers.html and experiencedplayers.html */
+
+div.articlecontainers {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+div.articlelinks {
+    border: solid black 2px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    height: 250px;
+    background-color: whitesmoke;
+}
+
+img.articlethumbnails {
+    border: 1px solid black;
+    max-width: 200px;
+    max-height: 200px;
+    float: left;
+}
+
+figcaption.articleblurb {
+    padding: 10px;
+}
+
+/* Styling for contact.html */
+div#form, div#fieldsets, div.formRow, div.button {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+fieldset {
+    border: black solid 1px;
+    border-radius: 15px;
+    background: whitesmoke;
+    margin-top: 5px;
+}
+
+#legend1 {
+    border: red solid 2px;
+    border-radius: 15px;
+    background: whitesmoke;
+    padding: 10px;
+}
+
+#legend2 {
+    border: blue solid 2px;
+    border-radius: 15px;
+    background: whitesmoke;
+    padding: 5px;
+}
+
+div.formRow {
+    width: 40%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+label {
+    white-space: nowrap;
+}
+
+input {
+    margin: 3px;
+}
+
+textarea {
+    margin: 3px;
+    resize: vertical;
+}
+
+#submit {
+    align-content: center;
+}
+
+/* Inline validation settings */
+
+input:invalid, textarea:invalid {
+    border: 1px solid red;
+}
+
+input[type=text]:valid, input[type=email]:valid,
+input[type=tel]:valid, input[type=date]:valid,
+textarea:valid {
+    border: 1px solid lawngreen;
+}
+
+/* Styling for about.html */
+
+div[class^="div-"] {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 5px;
+    flex-basis: 300px;
+}
+
+div.div-1 {
+    flex-grow: 0;
+    background-color: whitesmoke;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: auto;
+}
+
+div.div-2 {
+    flex-grow: 1;
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+div.div-3 {
+    flex-grow: 3;
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+figure.thumbnail {
+    width: auto;
+    height: auto;
+    text-shadow: black 4px 6px 10px;
+    text-align: center;
+}
+
+#img1 {
+    border: 1px solid black;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+#img2 {
+    border: 1px solid black;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+#img3 {
+    border: 1px solid black;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+aside {
+    text-align: center;
+}
+
+/* Styling for smaller devices */
+
+/* phones ---------------------------- */
+@media only screen and (max-width:360px) {
+
+    body {
+        font-size: x-small;
+    }
+
+    #img1, #img2, #img3 {
+        border: 1px solid black;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    div.nav {
+        overflow-wrap: normal;
+    }
+}
+
+/* tablets --------------------------- */
+@media only screen and (min-width:361px) and (max-width:768px) {
+
+    body {
+        font-size: large;
+        margin: 20px 20px 20px
+    }
+}
+
+/* desktops -------------------------- */
+@media only screen and (min-width:769px) {
+
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    div.table {
+        height: 60%;
+        margin: 0% 20%;
+    }
 }
