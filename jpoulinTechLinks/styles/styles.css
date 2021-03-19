@@ -1,0 +1,211 @@
+html {
+	background-color: #424242;
+	font-family: tahoma;
+}
+a {
+	color: #088A85;
+}
+
+/*Classes and styles related to the navigation*/
+header {
+	padding-top: 15px;
+	background-color: rgb(15,15,15, .95);
+	padding-bottom: 15px;
+}
+
+.logo {
+	display: inline;
+	margin: auto;
+	color: #088A85;
+	padding-left: 15px;
+}
+
+nav {
+	text-decoration: none;
+	list-style-type: none;
+	width: 100%;
+	display: inline;
+}
+
+nav ul {
+	text-decoration: none;
+	list-style-type: none;
+	text-align: right;
+	margin: auto;
+	display: inline;
+	float: right;
+	margin-right: 25px;
+	font-size: 0px;
+	padding-top:7.5px;
+}
+
+nav ul li {
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 16px;
+	display: inline;
+}
+
+nav ul li a:hover {
+	background-color: rgb(46,46,46,.90);
+	border-color:gray;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 2px;
+	padding: 8px;
+}
+nav ul li a {
+	text-decoration: none;
+	margin: 2px;
+	padding: 10px;
+}
+h1 {
+	margin: 0px;
+
+}
+.content a {
+	text-decoration: none;
+	margin: 10px;
+}
+.content a:hover {
+	background-color: rgb(46,46,46,.90);
+	border-color:gray;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 2px;
+	padding: 8px;
+	margin: 0px;
+}
+/*Row and Column Rules/Main Content --> .content>.row>.col(s)*/
+.content {
+	background-color: rgb(15,15,15, .98);
+	position: relative;
+	
+	border-style: solid;
+	border-radius: 5px;
+	border-color: rgb(15,15,15);
+	margin-top: 5px;
+	margin-right:15%;
+	margin-left:15%;
+	margin-bottom: 5px;
+	color: white;
+}
+
+/*Rows and columns*/
+.row {
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 65px;
+	padding-right: 65px;
+	flex-wrap: wrap;
+	 
+}
+.col1-3 {
+	flex: 50%;	
+	padding: 10px;
+}
+.col1-2 {
+	flex: 45%;
+	padding: 10px;
+}
+.col1-4 {
+	flex: 50%;
+	display: inline-block;
+	padding: 10px;
+}
+.col1-1 {
+	flex: 50%;
+	display: inline-block;
+	padding: 10px;
+}
+.row:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+
+body {
+	background-image: url("images/circuit.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: black;
+	margin: 0%;
+	height: 100%;
+}
+img {
+	
+	width: 100%;
+	border-color:gray;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 2px;
+}
+.noborder {
+	border: none;
+}
+
+/*Classes for element alignments (Center/Right/Left)*/
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+/*Footer styles*/
+footer {
+	background-color: rgb(15,15,15, .95);
+	color: #088A85;
+}
+footer a {
+	text-decoration: none;
+}
+footer a:hover {
+	color: white;
+}
+
+/* Change size of columns/rows and various elements for a small screen*/
+@media screen and (max-width: 800px) {
+.col1-4 {
+	flex: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left:5%;
+}
+  .col1-3 {
+	flex: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left:5%;
+}
+.col1-2 {
+	flex: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left:5%;
+}
+.col1-1 {
+	flex: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left:5%;
+}
+
+}
