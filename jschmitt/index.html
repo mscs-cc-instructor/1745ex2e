@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Project 2: Fetch and Graph CSV</title>
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="table.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li><a href="home.html">Joseph Schmitt</a></li>
+                <li class="dropdown">
+                        <a href="Projects.html">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="crickets.html">Cricket Data</a>
+                            <a href="slr.html">Simple Linear Regression</a>
+                        </div>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="row">
+        <div class="left">
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>Chirps</th>
+                        <th>Temp</th>
+                    </tr>
+
+                </thead>
+                <tbody class="tbo" id="tboss">
+                </tbody>
+            </table>
+        </div>
+        <div class="column"><canvas id="myChart"></canvas></div>
+    </div>
+    <div id="forms">
+        <form id="myForm" style="visibility: hidden;">
+            <label for="startY">Start Year: </label>
+            <select name="startY" id="startYear" onchange="chartIt2(parseFloat(document.getElementById('startYear').value),parseFloat(document.getElementById('endYear').value));"></select>
+            <label for="endY">End Year: </label>
+            <select name="endY" id="endYear" onchange="chartIt2(parseFloat(document.getElementById('startYear').value),parseFloat(document.getElementById('endYear').value));"></select>
+        </form>
+        <button onclick="chartCricket()">Chart Cricket Data</button>
+    </div>
+</body>
+</html>
