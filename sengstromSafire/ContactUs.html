@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Safire Soaps and Candles</title>
+    <meta name="keywords" content="soap, candles, homemade" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="SafireSoaps.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <img style="display: inline;" src="Images/Final.png" alt="Safire Soaps logo" width="250" />
+        <h1 style="display: inline;">Safire Soaps and Candles</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="ContactUS.html">Contact US</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <form method="post" action="https://littlelightmedia.com/test.php">
+            <div id="forms">
+                <fieldset>
+                    <legend>
+                        Contact
+                    </legend>
+                    <div class="formRow">
+                        <label for="Name">Name*</label>
+                        <input type="text" placeholder="Your Name" name="name" id="name" required />
+                    </div>
+                    <div class="formRow">
+                        <label for="Name">Email*</label>
+                        <input type="text" placeholder="Your Email" name="email" id="email" required />
+                    </div>
+                    <div class="formRow">
+                        <label for="Name">Phone Number</label>
+                        <input type="text" placeholder="Your Phone Number" name="phone" id="phone"
+                               pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-}?\d{4}$" />
+
+                    </div>
+                    <div class="formRow">
+                        <label for="street">Street</label>
+                        <input type="text" placeholder="123 your street" name="street" id="street" />
+                    </div>
+                    <div class="formRow">
+                        <label for="city">City</label>
+                        <input type="text" value="City" placeholder="city name" name="city" id="city" />
+                    </div>
+                    <div class="formRow">
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="IA">Iowa</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="WI">Wisconsin</option>
+                        </select>
+                    </div>
+                    <div class="formRow">
+                        <label for="zip">Zip</label>
+                        <input type="number" placeholder="12345" name="zip" id="street" pattern="^\d{5}$" />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Tell Us about your experience
+                    </legend>
+                    <div class="formRow">
+                        <label for="Name">Date*</label>
+                        <input type="date" placeholder="Date" name="date" id="date" required />
+                    </div>
+                    <div class="formRow">
+                        <label for="Name">Purchase</label>
+                        <select name="purchase" id="purchase">
+                            <option value="in store">In Store</option>
+                            <option value="online">Online</option>
+                            <option value="mail">Catalog</option>
+                        </select>
+                    </div>
+                    <div class="formRow">
+                        <label for="Name">Was the staff friendly?</label>
+                        <div class="optGroup">
+                            <label for="cYes">Yes</label>
+                            <input name="oCorrect" id="cYes" value="yes" type="radio" />
+                            <label for="cNo">No</label>
+                            <input name="oCorrect" id="cNo" value="no" type="radio" />
+                            <label for="cN/A">N/A</label>
+                            <input name="oCorrect" id="cN/A" value="N/A" type="radio" />
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <label for="itemSpin">How many times have you purchased from us in the last year?</label>
+                        <input name="numPurchase" id="itemSpin" type="number" value="1" step="1" min="0" max="25" />
+                    </div>
+                    <div class="formRow">
+                        <label for="rateUs">
+                            Please Rate Your Experience:
+                            (0=poor, 10=great)
+                        </label>
+                        0<input name="rateUs" id="attSlider" type="range" value="1" step="1" min="0" max="10" />10
+                    </div>
+                    <div class="formRow">
+                        <label for="CommentBox">Tell Us More:</label>
+                        <textarea name="CommentBox" id="commentbox"></textarea>
+                    </div>
+                </fieldset>
+            </div>
+            <input type="submit" id="submit" value="Submit" />
+            <input type="reset" id="reset" value="Reset" />
+        </form>
+    </div>
+    <footer>
+
+        <div class="title4" style="float:right">Dec 2020 Stacey Engstrom</div>
+
+
+    </footer>
+</body>
+</html>
